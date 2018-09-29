@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>My First JavaScript</h2>
+
+    <button type="button"onclick="document.getElementById('date').innerHTML = Date()">Click me!</button>
+
+    <button type="button">버튼</button>
+
+    <p id="date">버튼을 클릭하면 현재 시간이 출력됩니다.</p>
+
+    <hr>
+
+    <h2>What can JavaScript Do?</h2>
+    <button type="button"
+    onclick='document.getElementById("hello_p").innerHTML = "Hello Javascript!"'>Click me!</button>
+    <p id="hello_p">버튼을 클릭해보세요.</p>
+
+    <hr>
+
+    <button
+    onclick="document.getElementById('fox_image').src='https://ppss.kr/wp-content/uploads/2013/02/c0002313_4fcdfe17182ba-300x300.jpeg'">티벳</button>
+
+    <img id="fox_image" src="사막.png"
+    style="width:200px">
+
+    <button
+    onclick="document.getElementById('fox_image').src='https://pbs.twimg.com/profile_images/1816500559/5_v8329919_400x400.jpg'">사막</button>
+
+    <hr>
+
+    <p id="font_size">Style</p>
+    <button
+    onclick="document.getElementById('font_size').style.fontSize = '25px'">25px</button>
+    <button
+    onclick="document.getElementById('font_size').style.fontSize = '40px'">40px</button>
+    <button
+    onclick="document.getElementById('font_size').style.display = 'none'">안보이게 하기</button>
+    <button
+    onclick="document.getElementById('font_size').style.display = 'block'">보이게 하기</button>
+    <button
+    onclick="document.getElementById('font_size').style.color= 'purple'">보라보라</button>
+
+
+    <p id="demo3">A Paragraph</p>
+    <button type="button" onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+                document.getElementById("demo3").innerHTML = "Paragraph changed.";
+        }
+
+    </script>
+
+    <hr>
+
+    <p id="demo_function_color01">Click the button to change the color of this paragraph.</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            var x =
+            document.getElementById("demo_function_color01");
+            x.style.color = "red";
+        }
+
+    </script>
+
+    <hr>
+
+    <Script type="text/javascript">
+        function changeColor(newColor) {
+            elem = document.getElementById("paral");
+            elem.style.color = newColor;
+        }
+
+    </Script>
+    <p id="paral">함수 매개변수이용 컬러변경</p>
+    <button
+    onclick="changeColor('blue');">blue</button>
+    <button
+    onclick="changeColor('red');">red</button>
+
+    <hr>
+
+    <p id="demo4"></p>
+    <script>
+        document.getElementById("demo4").innerHTML = 5 + 6;
+
+    </script>
+
+    <hr>
+
+    <script>
+        document.write(5 + 6);
+        document.write("<br>TEST");
+    </script>
+
+    <hr>
+
+    <button onclick="document.write(5 + 6)">Try it</button>
+
+    <hr>
+
+
+    <script>
+        window.alert(5 + 6);
+
+    </script>
+
+    <hr>
+    <p id="demo5"></p>
+    <script>
+        var carName = "Volvo";
+        document.getElementById("demo5").innerHTML = carName;
+
+    </script>
+
+    <hr>
+
+
+
+</body>
+</html>
