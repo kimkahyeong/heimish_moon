@@ -1,0 +1,39 @@
+body {
+    background-color: cornsilk;
+}
+
+h1 {
+    background-color: antiquewhite;
+    font-family: 궁서;
+}
+
+p {
+    background-color: azure;
+    font-family: 돋움;
+}
+
+#p01 {
+    color:chartreuse;
+}
+
+p.c01 {
+    color:blueviolet;
+}
+
+
+
+a:link {
+    color:brown;
+}
+
+a:visited {
+    color:cadetblue;
+}
+
+a:hover {
+    color:darkkhaki;
+}
+
+a:active {
+    color:cornflowerblue;
+}
