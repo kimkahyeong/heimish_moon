@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>My First Javascript</h2>
+
+    <button type="botton" onclick="document.getElementById('date').innerHTML = Date()">Click Me!</button>
+    <p id=date>버튼을 클릭하면 현재 시간이 출력됩니다.</p>
+
+    <button type="button">바톤</button>
+
+            <hr>
+
+    <h2>What Can Javascript Do?</h2>
+    <button type="button" onclick='document.getElementById("hello_p").innerHTML = "Hello Javascript!"'>click Me!</button>
+    <p id="hello_p">버튼을 클릭해보세요.</p>
+
+            <hr>
+
+    <button onclick="document.getElementById('bulb_image').src='pic_bulb_on.png'">Turn on the light</button>
+
+    <img id="bulb_image" src="pic_bulb_off.png" style="width:100px">
+
+    <button onclick="document.getElementById('bulb_image').src = 'pic_bulb_off.png'">Turn off the light</button>
+
+            <hr>
+        
+    <p id = "font_size" style="color: mediumaquamarine">Style</p>
+    
+    <button onclick = "document.getElementById('font_size').style.fontSize = '25px'">25px</button>
+    
+    <button onclick = "document.getElementById('font_size').style.fontSize = '40px'">40px</button>
+    
+    <button onclick = "document.getElementById('font_size').style.display = 'none'">안 보이게 하기</button>
+    
+    <button onclick = "document.getElementById('font_size').style.display = 'block'">보이게 하기</button>
+    
+    <button onclick = "document.getElementById('font_size').style.color = 'black'">검은색</button>
+    
+    <button onclick = "document.getElementById('font_size').style.color = 'mediumaquamarine'">mediumaquamarine</button>
+
+            <hr>
+    
+    <p id = "demo3">A Paragraph</p>
+    <button onclick="myFunction()">Try it</button>
+    
+    <script>
+        function myFunction(){
+            document.getElementById("demo3").innerHTML = "Paragraph changed.";
+        }
+    </script>
+    
+            <hr>
+            
+    <p id = demp_function_color01>Click the button to change the color of this pargraph.</p>
+    
+    <button onclick="yourFunction()">Try it</button>
+    
+    <script>
+        function yourFunction(){
+            var x = document.getElementById("demp_function_color01");
+            x.style.color = "skyblue";
+        }
+    </script>
+       
+            <hr>
+        
+        <script type="text/javascript">
+        function changeColor(newColor){
+            elem = document.getElementById("paral");
+            elem.style.color = newColor;
+        }
+    </script>
+    
+    <p id = paral>함수 매개변수 이용 컬러변경</p>
+    
+    <button onclick = "changeColor('blue');">blue</button>
+    <button onclick = "changeColor('red');">red</button>
+    
+            <hr>
+            
+    <p id = "demo4"></p>
+    <script>
+        document.getElementById("demo4").innerHTML = 5+6;
+    </script>
+    
+            <hr>
+            
+    <script>
+        document.write(5+6);
+    </script>
+    
+            <hr>
+    
+    <button onclick="document.write(5+6)">Try it</button>
+    
+            <hr>
+            
+    <script>
+        window.alert(5+6);
+    </script>
+    
+    
+    <p id = "demo5"></p>
+    <script>
+        var carName = "Volvo";
+        document.getElementById("demo5").innerHTML = carName;
+    </script>
+</body>
+
+</html>
